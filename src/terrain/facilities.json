@@ -1,0 +1,167 @@
+[
+ {
+  "kind": "fire",
+  "name": "Liliw Fire Station",
+  "bgy": "Ilayang Palina",
+  "lat": 14.133787,
+  "lon": 121.433769,
+  "uv": [
+   0.52102,
+   0.56554
+  ]
+ },
+ {
+  "kind": "health",
+  "name": "Liliw Rural Health Unit",
+  "bgy": "Pag-Asa",
+  "lat": 14.130485,
+  "lon": 121.435337,
+  "uv": [
+   0.53306,
+   0.58629
+  ]
+ },
+ {
+  "kind": "school",
+  "name": "Novaliches Elementary School",
+  "bgy": "Novaliches",
+  "lat": 14.111012,
+  "lon": 121.455777,
+  "uv": [
+   0.69017,
+   0.70869
+  ]
+ },
+ {
+  "kind": "police",
+  "name": "Liliw Municipal Police Station",
+  "bgy": "Ilayang Palina",
+  "lat": 14.133748,
+  "lon": 121.433627,
+  "uv": [
+   0.51992,
+   0.56579
+  ]
+ },
+ {
+  "kind": "school",
+  "name": "Calumpang Elementary School",
+  "bgy": "Calumpang",
+  "lat": 14.200934,
+  "lon": 121.401872,
+  "uv": [
+   0.27586,
+   0.14351
+  ]
+ },
+ {
+  "kind": "school",
+  "name": "Mababang Paaralan ng Pag-asa",
+  "bgy": "Ilayang Palina",
+  "lat": 14.134142,
+  "lon": 121.433524,
+  "uv": [
+   0.51913,
+   0.56331
+  ]
+ },
+ {
+  "kind": "school",
+  "name": "Liliw Central Elementary School",
+  "bgy": "Oples",
+  "lat": 14.12817,
+  "lon": 121.437477,
+  "uv": [
+   0.54951,
+   0.60084
+  ]
+ },
+ {
+  "kind": "school",
+  "name": "Mojon Elementary School",
+  "bgy": "Mojon",
+  "lat": 14.209933,
+  "lon": 121.39884,
+  "uv": [
+   0.25255,
+   0.08695
+  ]
+ },
+ {
+  "kind": "school",
+  "name": "Liliw National High School",
+  "bgy": "Kanlurang Bukal",
+  "lat": 14.128394,
+  "lon": 121.439525,
+  "uv": [
+   0.56526,
+   0.59944
+  ]
+ },
+ {
+  "kind": "school",
+  "name": "Maranatha Christian Academy of Liliw",
+  "bgy": "Calumpang",
+  "lat": 14.201185,
+  "lon": 121.400004,
+  "uv": [
+   0.2615,
+   0.14194
+  ]
+ },
+ {
+  "kind": "school",
+  "name": "Daniw Elementary School",
+  "bgy": "Daniw",
+  "lat": 14.195823,
+  "lon": 121.377475,
+  "uv": [
+   0.08834,
+   0.17563
+  ]
+ },
+ {
+  "kind": "school",
+  "name": "Francisco S. Brosas Memorial Elementary School",
+  "bgy": "Tuy-Baanan",
+  "lat": 14.153042,
+  "lon": 121.438743,
+  "uv": [
+   0.55925,
+   0.44452
+  ]
+ },
+ {
+  "kind": "school",
+  "name": "Liceo de Liliw",
+  "bgy": "Pag-Asa",
+  "lat": 14.129803,
+  "lon": 121.4361,
+  "uv": [
+   0.53893,
+   0.59058
+  ]
+ },
+ {
+  "kind": "school",
+  "name": "Liliw Senior High School",
+  "bgy": "Ibabang Taykin",
+  "lat": 14.142804,
+  "lon": 121.439008,
+  "uv": [
+   0.56128,
+   0.50887
+  ]
+ },
+ {
+  "kind": "school",
+  "name": "Taykin Elementary School",
+  "bgy": "Ibabang Taykin",
+  "lat": 14.13459,
+  "lon": 121.436257,
+  "uv": [
+   0.54013,
+   0.56049
+  ]
+ }
+]

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TUGON · Emergency response for Liliw, Laguna</title>
+<meta name="description" content="TUGON is the emergency response app of Liliw, Laguna. Report incidents, follow responders live, and get alerts. Download for Android and iOS.">
+<meta name="theme-color" content="#0B0F14" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#EEF4FC" media="(prefers-color-scheme: light)">
+<meta property="og:title" content="TUGON · Emergency response for Liliw, Laguna">
+<meta property="og:description" content="Report incidents, follow responders live, and get alerts. Built for Liliw, Laguna.">
+<meta property="og:image" content="logo.png">
+<link rel="icon" href="logo.png" type="image/png">
+<link rel="apple-touch-icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Sora:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script>
+  // set the theme before first paint (no flash)
+  (function () {
+    var t;
+    try { t = localStorage.getItem("tugon-theme"); } catch (e) {}
+    if (t !== "light" && t !== "dark") t = matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+    document.documentElement.dataset.theme = t;
+  })();
+</script>
+</head>
+<body>
+<div id="root"></div>
+<noscript><p style="padding:24px">TUGON needs JavaScript for this page. Emergency hotlines. MAT Liliw: 0945-135-0537 · Fire: 0956-769-0379 · Police: 0906-360-4119</p></noscript>
+<script type="module" src="/src/main.jsx"></script>
+</body>
+</html>
