@@ -1,0 +1,2382 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-10-17T05:58:50Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 465239845,
+  "lat": 14.1362697,
+  "lon": 121.4157572,
+  "tags": {
+    "addr:city": "Nagcarlan",
+    "addr:place": "Poblacion",
+    "addr:postcode": "4002",
+    "amenity": "pharmacy",
+    "branch": "Nagcarlan",
+    "brand": "Mercury Drug",
+    "brand:wikidata": "Q6818610",
+    "brand:wikipedia": "en:Mercury Drug",
+    "healthcare": "pharmacy",
+    "name": "Mercury Drug"
+  }
+},
+{
+  "type": "node",
+  "id": 465242230,
+  "lat": 14.1337870,
+  "lon": 121.4337693,
+  "tags": {
+    "amenity": "fire_station",
+    "name": "Liliw Fire Station"
+  }
+},
+{
+  "type": "node",
+  "id": 1315670262,
+  "lat": 14.1468588,
+  "lon": 121.4705570,
+  "tags": {
+    "addr:street": "F. Blumentritt Street",
+    "amenity": "fire_station",
+    "name": "Majayjay Fire Station"
+  }
+},
+{
+  "type": "node",
+  "id": 2674328610,
+  "lat": 14.1212620,
+  "lon": 121.4690651,
+  "tags": {
+    "amenity": "school"
+  }
+},
+{
+  "type": "node",
+  "id": 2845861646,
+  "lat": 14.1101945,
+  "lon": 121.3930587,
+  "tags": {
+    "addr:city": "Rizal",
+    "addr:postcode": "4003",
+    "addr:street": "San Pablo - Rizal - Nagcarlan Road",
+    "alt_name": "The Generics Pharmacy",
+    "amenity": "pharmacy",
+    "dispensing": "no",
+    "healthcare": "pharmacy",
+    "name": "TGP",
+    "name:abbr": "TGP"
+  }
+},
+{
+  "type": "node",
+  "id": 3360883507,
+  "lat": 14.1367503,
+  "lon": 121.4167323,
+  "tags": {
+    "addr:municipality": "Nagcarlan",
+    "addr:postcode": "4002",
+    "addr:street": "E. A. Fernandez Street",
+    "amenity": "police",
+    "name": "Nagcarlan Police Outpost",
+    "operator": "Nagcarlan MPS"
+  }
+},
+{
+  "type": "node",
+  "id": 4155765274,
+  "lat": 14.1338290,
+  "lon": 121.4335860,
+  "tags": {
+    "amenity": "townhall",
+    "government": "administrative",
+    "name": "Ilaya Palina Barangay Hall",
+    "name:en": "Ilaya Palina Barangay Hall",
+    "name:tl": "Pamahalaang Barangay ng Ilaya Palina",
+    "office": "government",
+    "opening_hours": "24/7",
+    "townhall:type": "village"
+  }
+},
+{
+  "type": "node",
+  "id": 4328135139,
+  "lat": 14.1425890,
+  "lon": 121.4705525,
+  "tags": {
+    "addr:city": "Majayjay",
+    "addr:street": "A. Bonifacio Street",
+    "amenity": "townhall",
+    "name": "San Miguel Barangay Hall",
+    "townhall:type": "barangay"
+  }
+},
+{
+  "type": "node",
+  "id": 5585265203,
+  "lat": 14.1451190,
+  "lon": 121.4721092,
+  "tags": {
+    "addr:housenumber": "222",
+    "addr:street": "F. Blumentritt Street",
+    "addr:town": "Majayjay",
+    "amenity": "pharmacy",
+    "dispensing": "yes",
+    "healthcare": "pharmacy",
+    "name": "Save Health & Meds Pharmacy",
+    "opening_hours": "Mo-Su 07:00-20:00"
+  }
+},
+{
+  "type": "node",
+  "id": 5585265218,
+  "lat": 14.1470777,
+  "lon": 121.4706773,
+  "tags": {
+    "addr:street": "F. Balagtas Street",
+    "alt_name": "The Generics Pharmacy",
+    "amenity": "pharmacy",
+    "brand": "The Generics Pharmacy",
+    "brand:wikidata": "Q61948677",
+    "dispensing": "yes",
+    "healthcare": "pharmacy",
+    "name": "TGP",
+    "name:abbr": "TGP",
+    "official_name": "The Generics Pharmacy"
+  }
+},
+{
+  "type": "node",
+  "id": 7328407486,
+  "lat": 14.1304854,
+  "lon": 121.4353368,
+  "tags": {
+    "amenity": "clinic",
+    "healthcare": "yes",
+    "healthcare:speciality": "internal",
+    "name": "Liliw Rural Health Unit",
+    "opening_hours": "08:00-17:00",
+    "operator:type": "public",
+    "short_name": "Liliw RHU"
+  }
+},
+{
+  "type": "node",
+  "id": 7328407487,
+  "lat": 14.1312917,
+  "lon": 121.4355192,
+  "tags": {
+    "addr:neighbourhood": "Poblacion",
+    "addr:quarter": "Bagong Anyo",
+    "amenity": "pharmacy",
+    "branch": "Liliw",
+    "brand": "Mercury Drug",
+    "brand:wikidata": "Q6818610",
+    "healthcare": "pharmacy",
+    "name": "Mercury Drug",
+    "not:brand:wikidata": "Q6818610",
+    "opening_hours": "Mo-Su 10:00-21:00"
+  }
+},
+{
+  "type": "node",
+  "id": 7328540594,
+  "lat": 14.1378124,
+  "lon": 121.4167008,
+  "tags": {
+    "healthcare": "laboratory",
+    "name": "Laguna Diagnostic"
+  }
+},
+{
+  "type": "node",
+  "id": 7328540595,
+  "lat": 14.1369749,
+  "lon": 121.4169261,
+  "tags": {
+    "amenity": "pharmacy",
+    "healthcare": "pharmacy",
+    "name": "Paring's Pharmacy"
+  }
+},
+{
+  "type": "node",
+  "id": 8041846185,
+  "lat": 14.1761227,
+  "lon": 121.4317775,
+  "tags": {
+    "addr:full": "Magdalena-Liliw Road, Bungkol, Magdalena, Laguna",
+    "contact:email": "tahananngkabataanlaguna@gmail.com",
+    "contact:mobile": "+63 9196480857",
+    "fee": "no",
+    "healthcare": "psychotherapist",
+    "indoor": "yes",
+    "name": "Tahanan ng Kabataan - Laguna (Laguna Drug Rehabilitation Center, Bahay Laguna)",
+    "operator:type": "government",
+    "phone": "+63 49 501 2294",
+    "phone:mobile": "+63 9167495012"
+  }
+},
+{
+  "type": "node",
+  "id": 9106659642,
+  "lat": 14.2058366,
+  "lon": 121.4190216,
+  "tags": {
+    "addr:province": "Laguna",
+    "addr:town": "Magdalena",
+    "amenity": "school",
+    "isced:level": "1",
+    "name": "Maravilla Elementary School",
+    "old_name": "Maravilla Primary School",
+    "operator": "Magdalena District of Laguna Schools Division, DepEd",
+    "operator:type": "public",
+    "population:pupils:2012": "225",
+    "population:pupils:2015": "254",
+    "ref": "108342",
+    "source": "Department of Education, Philippines",
+    "source:date": "2012",
+    "start_date": "1991"
+  }
+},
+{
+  "type": "node",
+  "id": 9106676981,
+  "lat": 14.1110115,
+  "lon": 121.4557775,
+  "tags": {
+    "addr:city": "Liliw",
+    "addr:province": "Laguna",
+    "amenity": "school",
+    "isced:level": "1;0",
+    "name": "Novaliches Elementary School",
+    "operator": "Liliw District of Laguna Schools Division, DepEd",
+    "operator:type": "public",
+    "population:pupils:2012": "77",
+    "population:pupils:2015": "82",
+    "ref": "108299",
+    "source": "Department of Education, Philippines",
+    "source:date": "2012",
+    "start_date": "2000"
+  }
+},
+{
+  "type": "node",
+  "id": 9531719622,
+  "lat": 14.1337479,
+  "lon": 121.4336266,
+  "tags": {
+    "amenity": "police",
+    "name": "Liliw Municipal Police Station"
+  }
+},
+{
+  "type": "node",
+  "id": 12530526789,
+  "lat": 14.1339405,
+  "lon": 121.4123548,
+  "tags": {
+    "addr:municipality": "Nagcarlan",
+    "addr:quarter": "Yukos",
+    "addr:street": "M. Doria Street",
+    "admin_level": "10",
+    "amenity": "health_post",
+    "healthcare": "community_health_worker",
+    "name": "Yukos Barangay Health Station",
+    "operator:type": "public",
+    "ref": "DOH000000000016960"
+  }
+},
+{
+  "type": "way",
+  "id": 112781131,
+  "center": {
+    "lat": 14.1332629,
+    "lon": 121.4150750
+  },
+  "tags": {
+    "addr2:street": "M. Doria Street",
+    "addr:postcode": "4002",
+    "addr:street": "San Pablo - Rizal - Nagcarlan Road",
+    "addr:town": "Nagcarlan",
+    "amenity": "townhall",
+    "building": "public",
+    "building:levels": "2",
+    "name": "Nagcarlan Municipal Hall",
+    "old_name": "Nagcarlan Presidencia",
+    "townhall:type": "town",
+    "wikidata": "Q56488606",
+    "wikimedia_commons": "Category:Nagcarlan Presidencia"
+  }
+},
+{
+  "type": "way",
+  "id": 116775123,
+  "center": {
+    "lat": 14.1462899,
+    "lon": 121.4715904
+  },
+  "tags": {
+    "amenity": "school",
+    "name": "Liceo de Majayjay"
+  }
+},
+{
+  "type": "way",
+  "id": 116775125,
+  "center": {
+    "lat": 14.1420875,
+    "lon": 121.4703220
+  },
+  "tags": {
+    "addr:city": "Majayjay",
+    "addr:postcode": "4005",
+    "addr:province": "Laguna",
+    "addr:street": "M. H. del Pilar Street",
+    "alt_name": "Santa Catalina High School",
+    "amenity": "school",
+    "isced:level": "2-3",
+    "name": "Santa Catalina National High School",
+    "operator": "Majayjay District",
+    "operator:type": "government",
+    "operator:wikidata": "Q130249799",
+    "population:pupils:2012": "1314",
+    "population:pupils:2015": "1314",
+    "ref": "301268",
+    "source": "Department of Education, Philippines",
+    "source:date": "2012",
+    "start_date": "1971"
+  }
+},
+{
+  "type": "way",
+  "id": 116775129,
+  "center": {
+    "lat": 14.1462727,
+    "lon": 121.4707858
+  },
+  "tags": {
+    "addr:street": "F. Blumentritt Street",
+    "amenity": "doctors",
+    "building": "civic",
+    "healthcare:speciality": "general",
+    "name": "Majayjay Rural Health Unit",
+    "operator:type": "Majayjay Municipal Health Office",
+    "ref": "DOH000000000007380",
+    "source": "Bing"
+  }
+},
+{
+  "type": "way",
+  "id": 116775130,
+  "center": {
+    "lat": 14.1419497,
+    "lon": 121.4711162
+  },
+  "tags": {
+    "addr:city": "Majayjay",
+    "addr:postcode": "4005",
+    "addr:province": "Laguna",
+    "addr:street": "P. Zamora Street",
+    "amenity": "school",
+    "isced:level": "1",
+    "name": "Majayjay Elementary School",
+    "operator": "Majayjay District",
+    "operator:type": "government",
+    "operator:wikidata": "Q130249799",
+    "population:pupils:2012": "1324",
+    "population:pupils:2015": "1506",
+    "ref": "108348",
+    "source": "Department of Education, Philippines",
+    "source:date": "2012",
+    "start_date": "1902"
+  }
+},
+{
+  "type": "way",
+  "id": 116775132,
+  "center": {
+    "lat": 14.1467017,
+    "lon": 121.4706020
+  },
+  "tags": {
+    "amenity": "townhall",
+    "building": "civic",
+    "name": "Majayjay Municipal Hall",
+    "townhall:type": "municipality"
+  }
+},
+{
+  "type": "way",
+  "id": 116776880,
+  "center": {
+    "lat": 14.1744607,
+    "lon": 121.4435688
+  },
+  "tags": {
+    "addr:postcode": "4005",
+    "addr:province": "Laguna",
+    "addr:town": "Majayjay",
+    "amenity": "school",
+    "isced:level": "2",
+    "name": "Suba National High School",
+    "operator": "Majayjay District of Laguna Schools Division, DepEd",
+    "operator:type": "public",
+    "population:pupils:2012": "311",
+    "population:pupils:2015": "311",
+    "ref": "301275",
+    "source": "Department of Education, Philippines",
+    "source:date": "2012",
+    "start_date": "2002"
+  }
+},
+{
+  "type": "way",
+  "id": 116776882,
+  "center": {
+    "lat": 14.1664774,
+    "lon": 121.4530545
+  },
+  "tags": {
+    "addr:city": "Majayjay",
+    "addr:postcode": "4005",
+    "addr:province": "Laguna",
+    "amenity": "school",
+    "isced:level": "1",
+    "name": "Suba Elementary School",
+    "operator": "Majayjay District",
+    "operator:type": "government",
+    "operator:wikidata": "Q130249799",
+    "population:pupils:2012": "528",
+    "population:pupils:2015": "599",
+    "ref": "108350",
+    "source": "Department of Education, Philippines",
+    "source:date": "2012",
+    "start_date": "1925"
+  }
+},
+{
+  "type": "way",
+  "id": 116779216,
+  "center": {
+    "lat": 14.2001309,
+    "lon": 121.4294503
+  },
+  "tags": {
+    "addr:city": "Magdalena",
+    "addr:postcode": "4007",
+    "addr:street": "Emilio Jacinto Street",
+    "amenity": "townhall",
+    "building": "public",
+    "building:levels": "2",
+    "name": "Magdalena Municipal Hall",
+    "townhall:type": "town"
+  }
+},
+{
+  "type": "way",
+  "id": 122737400,
+  "center": {
+    "lat": 14.1408969,
+    "lon": 121.4131114
+  },
+  "tags": {
+    "addr:municipality": "Nagcarlan",
+    "addr:postcode": "4002",
+    "addr:province": "Laguna",
+    "addr:village": "Talangan",
+    "amenity": "school",
+    "isced:level": "2-3",
+    "name": "Talangan National High School",
+    "name:en": "Talangan National High School",
+    "name:tl": "Pambansang Mataas na Paaralan ng Talangan",
+    "operator": "Nagcarlan-Rizal District, Laguna School Division, DepEd",
+    "operator:type": "public",
+    "population:pupils:2012": "938",
+    "population:pupils:2015": "938",
+    "ref": "301276",
+    "source": "Bing; Department of Education, Philippines",
+    "source:date": "2012",
+    "start_date": "1970"
+  }
+},
+{
+  "type": "way",
+  "id": 132736449,
+  "center": {
+    "lat": 14.1306211,
+    "lon": 121.4359510
+  },
+  "tags": {
+    "addr:postcode": "4004",
+    "addr:street": "Gat Tayaw Street",
+    "addr:town": "Liliw",
+    "addr:village": "Bagong Anyo",
+    "amenity": "townhall",
+    "building": "public",
+    "government": "administrative",
+    "name": "Liliw Munincipal Hall",
+    "office": "government",
+    "townhall:type": "town",
+    "wikidata": "Q105594681"
+  }
+},
+{
+  "type": "way",
+  "id": 144334858,
+  "center": {
+    "lat": 14.2009344,
+    "lon": 121.4018725
+  },
+  "tags": {
+    "addr:city": "Liliw",
+    "addr:postcode": "4004",
+    "addr:province": "Laguna",
+    "addr:village": "Calumpang",
+    "amenity": "school",
+    "isced:level": "1",
+    "name": "Calumpang Elementary School",
+    "name:en": "Calumpang Elementary School",
+    "name:tl": "Paaralang Elementarya ng Calumpang",
+    "operator": "Liliw District",
+    "operator:type": "government",
+    "operator:wikidata": "Q130249799",
+    "population:pupils:2012": "458",
+    "population:pupils:2015": "508",
+    "ref": "108294",
+    "source": "Department of Education, Philippines",
+    "source:date": "2012",
+    "start_date": "1932"
+  }
+},
+{
+  "type": "way",
+  "id": 144334866,
+  "center": {
+    "lat": 14.2236151,
+    "lon": 121.3986539
+  },
+  "tags": {
+    "addr:hamlet": "4",
+    "addr:postcode": "4009",
+    "addr:province": "Laguna",
+    "addr:town": "Santa Cruz",
+    "amenity": "school",
+    "isced:level": "1",
+    "name": "Oogong Elementary School",
+    "name:en": "Oogong Elementary School",
+    "name:tl": "Paaralang Elementarya ng Oogong",
+    "operator": "Santa Cruz District of Laguna Schools Division, DepEd",
+    "operator:type": "public",
+    "population:pupils:2012": "629",
+    "population:pupils:2015": "728",
+    "ref": "108441",
+    "source": "Department of Education, Philippines",
+    "source:date": "2012",
+    "start_date": "1978"
+  }
+},
+{
+  "type": "way",
+  "id": 145498233,
+  "center": {
+    "lat": 14.2238092,
+    "lon": 121.4305162
+  },
+  "tags": {
+    "addr:province": "Laguna",
+    "addr:town": "Magdalena",
+    "addr:village": "Cigaras",
+    "amenity": "school",
+    "isced:level": "2-3",
+    "name": "Buenavista National High School",
+    "operator": "Magdalena District of Laguna Schools Division, DepEd",
+    "operator:type": "public",
+    "population:pupils:2012": "500",
+    "population:pupils:2015": "500",
+    "ref": "301232",
+    "source": "Department of Education, Philippines",
+    "source:date": "2012",
+    "start_date": "1974"
+  }
+},
+{
+  "type": "way",
+  "id": 156579034,
+  "center": {
+    "lat": 14.1114019,
+    "lon": 121.3911308
+  },
+  "tags": {
+    "addr:city": "Rizal",
+    "addr:postcode": "4003",
+    "addr:province": "Laguna",
+    "addr:street": "San Pablo - Rizal - Nagcarlan Road",
+    "addr:village": "Talaga",
+    "amenity": "school",
+    "isced:level": "1",
+    "name": "Rizal Elementary School",
+    "name:en": "Rizal Elementary School",
+    "name:tl": "Paaralang Elementarya ng Rizal",
+    "operator": "Nagcarlan-Rizal District, Laguna School Division, DepEd",
+    "operator:type": "public",
+    "population:pupils:2012": "1143",
+    "population:pupils:2015": "1327",
+    "ref": "108364",
+    "source": "Bing; Department of Education, Philippines",
+    "source:date": "2012",
+    "start_date": "1921"
+  }
+},
+{
+  "type": "way",
+  "id": 156579035,
+  "center": {
+    "lat": 14.1098303,
+    "lon": 121.3934831
+  },
+  "tags": {
+    "addr:city": "Rizal",
+    "addr:postcode": "4003",
+    "amenity": "townhall",
+    "building": "yes",
+    "name": "Rizal Municipal Hall",
+    "source": "Bing",
+    "townhall:type": "town"
+  }
+},
+{
+  "type": "way",
+  "id": 156579059,
+  "center": {
+    "lat": 14.1346158,
+    "lon": 121.4162375
+  },
+  "tags": {
+    "addr:postcode": "4002",
+    "addr:quarter": "Poblacion Ⅲ",
+    "addr:street": "M. Doria Street",
+    "addr:town": "Nagcarlan",
+    "amenity": "hospital",
+    "beds": "25",
+    "contact:email": "nagcarlanhospital@yahoo.com",
+    "contact:phone": "+63 495631014;+63 495631016",
+    "healthcare": "hospital",
+    "name": "Nagcarlan District Hospital",
+    "official_name": "Laguna Provincial Hospital - Nagcarlan District Hospital",
+    "operator": "Provincial Government of Laguna",
+    "operator:type": "government",
+    "operator:wikidata": "Q126133577",
+    "ref": "DOH000000000000680",
+    "ref:doh": "680",
+    "source": "Bing"
+  }
+},
+{
+  "type": "way",
+  "id": 188704572,
+  "center": {
+    "lat": 14.2003028,
+    "lon": 121.4291746
+  },
+  "tags": {
+    "amenity": "fire_station",
+    "building": "public",
+    "name": "Magdalena Fire Station",
+    "network": "Laguna Fire District",
+    "operator:type": "public",
+    "phone": "+63 49 5033446",
+    "previously": "node:2514746200"
+  }
+},
+{
+  "type": "way",
+  "id": 209632278,
+  "center": {
+    "lat": 14.1323380,
+    "lon": 121.4130995
+  },
+  "tags": {
+    "addr:postcode": "4002",
+    "addr:province": "Laguna",
+    "addr:street": "G. Aynaga Street",
+    "addr:town": "Nagcarlan",
+    "addr:village": "Yukos",
+    "amenity": "school",
+    "isced:level": "1",
+    "name": "Yukos Elementary School",
+    "name:en": "Yukos Elementary School",
+    "name:tl": "Paaralang Elementarya ng Yukos",
+    "operator": "Nagcarlan-Rizal District, Laguna School Division, DepEd",
+    "operator:type": "public",
+    "population:pupils:2012": "1083",
+    "population:pupils:2015": "1210",
+    "ref": "108372",
+    "source": "Department of Education, Philippines",
+    "source:date": "2012",
+    "start_date": "1968"
+  }
+},
+{
+  "type": "way",
+  "id": 209633273,
+  "center": {
+    "lat": 14.1395202,
+    "lon": 121.4182524
+  },
+  "tags": {
+    "addr:municipality": "Nagcarlan",
+    "addr:postcode": "4002",
+    "addr:street": "Graciano Lopez Jaena Street",
+    "amenity": "school",
+    "isced:level": "1",
+    "name": "Crisanto Guysayko Memorial Elementary School",
+    "name:en": "Crisanto Guysayko Memorial Elementary School",
+    "name:tl": "Mababang Paaralang Pang-Alaala kay Crisanto Guysayko",
+    "operator": "Nagcarlan-Rizal District, Laguna School Division, DepEd",
+    "operator:type": "public",
+    "population:pupils:2012": "1555",
+    "population:pupils:2015": "1781",
+    "ref": "108357",
+    "source": "Department of Education, Philippines",
+    "source:date": "2012",
+    "start_date": "1920"
+  }
+},
+{
+  "type": "way",
+  "id": 220587653,
+  "center": {
+    "lat": 14.1108397,
+    "lon": 121.3915987
+  },
+  "tags": {
+    "addr:city": "Rizal",
+    "addr:postcode": "4003",
+    "addr:street": "San Pablo - Rizal - Nagcarlan Road",
+    "amenity": "townhall",
+    "building": "yes",
+    "building:levels": "2",
+    "name": "West Poblacion Barangay Hall",
+    "townhall:type": "village"
+  }
+},
+{
+  "type": "way",
+  "id": 220587660,
+  "center": {
+    "lat": 14.1111320,
+    "lon": 121.3908582
+  },
+  "tags": {
+    "addr:city": "Rizal",
+    "addr:postcode": "4003",
+    "addr:street": "San Pablo - Rizal - Nagcarlan Road",
+    "amenity": "townhall",
+    "building": "yes",
+    "building:levels": "2",
+    "name": "Talaga Barangay Hall",
+    "townhall:type": "barangay"
+  }
+},
+{
+  "type": "way",
+  "id": 223102331,
+  "center": {
+    "lat": 14.1105656,
+    "lon": 121.3814437
+  },
+  "tags": {
+    "addr:city": "Rizal",
+    "addr:postcode": "4003",
+    "addr:province": "Laguna",
+    "addr:street": "San Pablo - Rizal - Nagcarlan Road",
+    "addr:village": "Antipolo",
+    "amenity": "school",
+    "isced:level": "0-1",
+    "name": "Antipolo Sulsuguin Elementary School",
+    "name:en": "Antipolo Sulsuguin Elementary School",
+    "name:tl": "Paaralang Elementarya ng Antipolo Sulsuguin",
+    "operator": "Nagcarlan-Rizal District, Laguna School Division, DepEd",
+    "operator:type": "public",
+    "population:pupils:2012": "285",
+    "population:pupils:2015": "326",
+    "previously": "node:416857980",
+    "ref": "108353",
+    "source": "Bing; Department of Education, Philippines",
+    "source:date": "2012",
+    "start_date": "1955"
+  }
+},
+{
+  "type": "way",
+  "id": 223102337,
+  "center": {
+    "lat": 14.1108920,
+    "lon": 121.3823299
+  },
+  "tags": {
+    "addr:city": "Rizal",
+    "addr:postcode": "4003",
+    "addr:street": "San Pablo - Rizal - Nagcarlan Road",
+    "amenity": "townhall",
+    "building": "yes",
+    "building:levels": "2",
+    "townhall:type": "village"
+  }
+},
+{
+  "type": "way",
+  "id": 237174206,
+  "center": {
+    "lat": 14.1130185,
+    "lon": 121.3946923
+  },
+  "tags": {
+    "addr:city": "Rizal",
+    "addr:postcode": "4003",
+    "addr:province": "Laguna",
+    "addr:street": "Subida Street",
+    "amenity": "school",
+    "isced:level": "2-3",
+    "name": "Cristobal S. Conducto Memorial National High School",
+    "name:en": "Cristobal S. Conducto Memorial National High School",
+    "name:tl": "Pambansang Mataas na Paaralang Pang-Alaala kay Cristobal S. Conducto",
+    "old_name": "Rizal National High School",
+    "operator": "Nagcarlan-Rizal District, Laguna School Division, DepEd",
+    "operator:type": "public",
+    "population:pupils:2012": "1275",
+    "population:pupils:2015": "1275",
+    "ref": "307903",
+    "source": "Department of Education, Philippines",
+    "source:date": "2012",
+    "start_date": "1968"
+  }
+},
+{
+  "type": "way",
+  "id": 237174402,
+  "center": {
+    "lat": 14.1111478,
+    "lon": 121.3937896
+  },
+  "tags": {
+    "amenity": "clinic",
+    "building": "yes",
+    "building:levels": "1",
+    "name": "Rizal Rural Health Center"
+  }
+},
+{
+  "type": "way",
+  "id": 244120772,
+  "center": {
+    "lat": 14.2021956,
+    "lon": 121.4288478
+  },
+  "tags": {
+    "addr:city": "Magdalena",
+    "addr:postcode": "4007",
+    "addr:province": "Laguna",
+    "addr:street": "Emilio Jacinto Street",
+    "addr:village": "De Luna",
+    "amenity": "school",
+    "isced:level": "0-1",
+    "name": "Ricardo A. Pronove Elementary School",
+    "name:en": "Ricardo A. Pronove Elementary School",
+    "name:tl": "Paaralang Elementarya Ricardo A. Pronove",
+    "operator": "Magdalena District",
+    "operator:type": "government",
+    "operator:wikidata": "Q130249799",
+    "population:pupils:2012": "830",
+    "population:pupils:2015": "942",
+    "ref": "108343",
+    "source": "Department of Education, Philippines",
+    "source:date": "2012",
+    "start_date": "1973"
+  }
+},
+{
+  "type": "way",
+  "id": 244124321,
+  "center": {
+    "lat": 14.1998622,
+    "lon": 121.4287429
+  },
+  "tags": {
+    "addr:city": "Magdalena",
+    "addr:postcode": "4007",
+    "addr:province": "Laguna",
+    "addr:street": "Jacinto Zamora Street",
+    "alt_name": "Magdalena Central School",
+    "amenity": "school",
+    "isced:level": "0-1",
+    "name": "Ananias Laico Memorial Elementary School",
+    "name:en": "Ananias Laico Memorial Elementary School",
+    "name:etymology": "Ananias Lucena Laico",
+    "name:etymology:wikidata": "Q28755688",
+    "name:tl": "Mababang Paaralang Pang-Alaala kay Ananias Laico",
+    "old_name": "Magdalena Elementary School",
+    "operator": "Magdalena District",
+    "operator:type": "government",
+    "operator:wikidata": "Q130249799",
+    "population:pupils:2012": "990",
+    "population:pupils:2015": "1141",
+    "ref": "108341",
+    "source": "Department of Education, Philippines",
+    "source:date": "2012",
+    "start_date": "1960"
+  }
+},
+{
+  "type": "way",
+  "id": 244126316,
+  "center": {
+    "lat": 14.2008070,
+    "lon": 121.4300628
+  },
+  "tags": {
+    "addr:street": "Jose P. Rizal Street",
+    "addr:town": "Magdalena",
+    "amenity": "school",
+    "isced:level": "2-3",
+    "name": "Banahaw Institute",
+    "ref": "402553"
+  }
+},
+{
+  "type": "way",
+  "id": 317626974,
+  "center": {
+    "lat": 14.1553323,
+    "lon": 121.4436226
+  },
+  "tags": {
+    "amenity": "townhall",
+    "name": "Ilayang Bayucain Barangay Hall",
+    "townhall:type": "barangay"
+  }
+},
+{
+  "type": "way",
+  "id": 329244580,
+  "center": {
+    "lat": 14.1336597,
+    "lon": 121.4162992
+  },
+  "tags": {
+    "addr:postcode": "4002",
+    "addr:quarter": "Poblacion Ⅲ",
+    "addr:street": "M. Doria Street",
+    "addr:town": "Nagcarlan",
+    "amenity": "police",
+    "name": "Nagcarlan Municipal Police Station",
+    "operator": "PNP"
+  }
+},
+{
+  "type": "way",
+  "id": 329244582,
+  "center": {
+    "lat": 14.1341364,
+    "lon": 121.4152978
+  },
+  "tags": {
+    "addr:postcode": "4002",
+    "addr:province": "Laguna",
+    "addr:street": "Jose Rizal Avenue",
+    "addr:town": "Nagcarlan",
+    "alt_name": "NMS",
+    "amenity": "school",
+    "name": "Nagcarlan Montessori School"
+  }
+},
+{
+  "type": "way",
+  "id": 329244583,
+  "center": {
+    "lat": 14.1358471,
+    "lon": 121.4152718
+  },
+  "tags": {
+    "addr:city": "Nagcarlan",
+    "addr:postcode": "4002",
+    "addr:street": "Jose Rizal Avenue",
+    "amenity": "school",
+    "name": "Rizal Standard Academy",
+    "previously": "node:3360883512"
+  }
+},
+{
+  "type": "way",
+  "id": 335706943,
+  "center": {
+    "lat": 14.1363623,
+    "lon": 121.4178943
+  },
+  "tags": {
+    "addr:municipality": "Nagcarlan",
+    "addr:postcode": "4002",
+    "addr:street": "General Antonio Luna Street",
+    "amenity": "school",
+    "name": "St. Mary's Academy of Nagcarlan",
+    "operator": "Religious of the Virgin Mary",
+    "operator:type": "religious"
+  }
+},
+{
+  "type": "way",
+  "id": 375790111,
+  "center": {
+    "lat": 14.1500725,
+    "lon": 121.4000663
+  },
+  "tags": {
+    "addr:city": "Nagcarlan",
+    "addr:postcode": "4002",
+    "addr:province": "Laguna",
+    "addr:village": "Bunga",
+    "amenity": "school",
+    "isced:level": "1",
+    "name": "Bunga Elementary School",
+    "name:en": "Bunga Elementary School",
+    "name:tl": "Paaralang Elementarya ng Bunga",
+    "operator": "Nagcarlan-Rizal District, Laguna School Division, DepEd",
+    "operator:type": "public",
+    "population:pupils:2012": "196",
+    "population:pupils:2015": "225",
+    "ref": "108356",
+    "source": "Bing; Department of Education, Philippines",
+    "source:date": "2012",
+    "start_date": "1925"
+  }
+},
+{
+  "type": "way",
+  "id": 375790112,
+  "center": {
+    "lat": 14.1318084,
+    "lon": 121.3831225
+  },
+  "tags": {
+    "addr:city": "Nagcarlan",
+    "addr:postcode": "4002",
+    "addr:province": "Laguna",
+    "addr:village": "Alumbrado",
+    "amenity": "school",
+    "facebook": "https://www.facebook.com/alumbradoesdepedtayo108352",
+    "isced:level": "1",
+    "name": "Alumbrado Elementary School",
+    "name:en": "Alumbrado Elementary School",
+    "name:tl": "Paaralang Elementarya ng Alumbrado",
+    "operator": "Nagcarlan-Rizal District, Laguna School Division, DepEd",
+    "operator:type": "public",
+    "population:pupils:2012": "195",
+    "population:pupils:2015": "219",
+    "ref": "108352",
+    "source": "Department of Education, Philippines",
+    "source:date": "2012",
+    "start_date": "1978"
+  }
+},
+{
+  "type": "way",
+  "id": 375790115,
+  "center": {
+    "lat": 14.1141477,
+    "lon": 121.4168466
+  },
+  "tags": {
+    "addr:city": "Nagcarlan",
+    "addr:neighbourhood": "Purok 6",
+    "addr:postcode": "4002",
+    "addr:province": "Laguna",
+    "amenity": "school",
+    "isced:level": "1",
+    "name": "Plaridel Elementary School",
+    "name:en": "Plaridel Elementary School",
+    "name:tl": "Paaralang Elementarya ng Plaridel",
+    "operator": "Nagcarlan-Rizal District, Laguna School Division, DepEd",
+    "operator:type": "public",
+    "population:pupils:2012": "453",
+    "population:pupils:2015": "515",
+    "ref": "108362",
+    "source": "Department of Education, Philippines",
+    "source:date": "2012",
+    "start_date": "1910"
+  }
+},
+{
+  "type": "way",
+  "id": 414430821,
+  "center": {
+    "lat": 14.1341419,
+    "lon": 121.4335243
+  },
+  "tags": {
+    "addr:city": "Liliw",
+    "addr:postcode": "4004",
+    "addr:province": "Laguna",
+    "addr:street": "A. Bonifacio Street",
+    "amenity": "school",
+    "isced:level": "1",
+    "name": "Mababang Paaralan ng Pag-asa",
+    "name:en": "Pag-asa Elementary School",
+    "name:tl": "Mababang Paaralan ng Pag-asa",
+    "operator": "Liliw District",
+    "operator:type": "government",
+    "operator:wikidata": "Q130249799",
+    "population:pupils:2012": "277",
+    "population:pupils:2015": "301",
+    "ref": "108300",
+    "source": "Department of Education, Philippines",
+    "source:date": "2012",
+    "start_date": "2000"
+  }
+},
+{
+  "type": "way",
+  "id": 598100767,
+  "center": {
+    "lat": 14.1338904,
+    "lon": 121.4166070
+  },
+  "tags": {
+    "addr:postcode": "4002",
+    "addr:quarter": "Poblacion Ⅲ",
+    "addr:street": "M. Doria Street",
+    "addr:town": "Nagcarlan",
+    "amenity": "townhall",
+    "building": "public",
+    "name": "Poblacion 3 Barangay Hall",
+    "previously": "node:3360883547",
+    "townhall:type": "barangay"
+  }
+},
+{
+  "type": "way",
+  "id": 598100773,
+  "center": {
+    "lat": 14.1329882,
+    "lon": 121.4151220
+  },
+  "tags": {
+    "addr:postcode": "4002",
+    "addr:street": "San Pablo - Rizal - Nagcarlan Road",
+    "addr:town": "Nagcarlan",
+    "amenity": "fire_station",
+    "building": "public",
+    "building:levels": "1",
+    "name": "Nagcarlan Fire Station",
+    "network": "Laguna Fire District",
+    "operator:type": "public",
+    "previously": "node:2198219695"
+  }
+},
+{
+  "type": "way",
+  "id": 598100774,
+  "center": {
+    "lat": 14.1339526,
+    "lon": 121.4123718
+  },
+  "tags": {
+    "addr:municipality": "Nagcarlan",
+    "addr:postcode": "4002",
+    "addr:quarter": "Yukos",
+    "addr:street": "M. Doria Street",
+    "admin_level": "10",
+    "amenity": "townhall",
+    "building": "civic",
+    "building:levels": "2",
+    "name": "Bahay Pamahalaan ng Barangay Yukos",
+    "name:en": "Yukos Barangay Hall",
+    "name:fil": "Bahay Pamahalaan ng Barangay Yukos",
+    "previously": "node:5669468191",
+    "townhall:type": "barangay"
+  }
+},
+{
+  "type": "way",
+  "id": 648196000,
+  "center": {
+    "lat": 14.1408237,
+    "lon": 121.4161438
+  },
+  "tags": {
+    "addr:municipality": "Nagcarlan",
+    "addr:postcode": "4002",
+    "addr:street": "A. Mabini Street",
+    "alt_name": "Alibumbungan Barangay Hall",
+    "amenity": "townhall",
+    "building": "civic",
+    "name": "Alibungbungan Barangay Hall",
+    "previously": "node: 6006344597",
+    "townhall:type": "village"
+  }
+},
+{
+  "type": "way",
+  "id": 741237649,
+  "center": {
+    "lat": 14.2001172,
+    "lon": 121.4292286
+  },
+  "tags": {
+    "addr:city": "Magdalena",
+    "addr:postcode": "4007",
+    "addr:street": "Emilio Jacinto Street",
+    "amenity": "police",
+    "building": "public",
+    "building:levels": "3",
+    "name": "Magdalena Police Station",
+    "phone": "+63 998 5985653",
+    "previously": "node:2514758242"
+  }
+},
+{
+  "type": "way",
+  "id": 769534853,
+  "center": {
+    "lat": 14.2070066,
+    "lon": 121.3796723
+  },
+  "tags": {
+    "addr:city": "Pila",
+    "addr:postcode": "4010",
+    "addr:province": "Laguna",
+    "addr:village": "Masico",
+    "amenity": "school",
+    "isced:level": "2",
+    "name": "Masico National High School",
+    "name:en": "Masico National High School",
+    "name:tl": "Pambansang Mataas na Paaralan ng Masico",
+    "operator": "Pila District, Laguna School Division, DepEd",
+    "operator:type": "public",
+    "population:pupils:2012": "486",
+    "population:pupils:2015": "486",
+    "ref": "301252",
+    "source": "Department of Education, Philippines",
+    "source:date": "2012",
+    "start_date": "1987"
+  }
+},
+{
+  "type": "way",
+  "id": 769553145,
+  "center": {
+    "lat": 14.1216578,
+    "lon": 121.4023585
+  },
+  "tags": {
+    "addr:city": "Nagcarlan",
+    "addr:postcode": "4002",
+    "addr:province": "Laguna",
+    "addr:village": "Banilad",
+    "amenity": "school",
+    "isced:level": "1",
+    "name": "Banilad Elementary School",
+    "name:en": "Banilad Elementary School",
+    "name:tl": "Paaralang Elementarya ng Banilad",
+    "operator": "Nagcarlan-Rizal District, Laguna School Division, DepEd",
+    "operator:type": "public",
+    "population:pupils:2012": "224",
+    "population:pupils:2015": "242",
+    "ref": "108354",
+    "source": "Department of Education, Philippines",
+    "source:date": "2012",
+    "start_date": "1978"
+  }
+},
+{
+  "type": "way",
+  "id": 771519413,
+  "center": {
+    "lat": 14.1281699,
+    "lon": 121.4374769
+  },
+  "tags": {
+    "addr:province": "Laguna",
+    "addr:town": "Liliw",
+    "addr:village": "Oples",
+    "amenity": "school",
+    "isced:level": "0-1",
+    "name": "Liliw Central Elementary School",
+    "name:tl": "Paaralang Elementarya ng Liliw",
+    "operator": "Liliw District of Laguna Schools Division, DepEd",
+    "operator:type": "public",
+    "population:pupils:2012": "1938",
+    "population:pupils:2015": "2163",
+    "ref": "108297",
+    "source": "Department of Education, Philippines",
+    "source:date": "2012",
+    "start_date": "1909"
+  }
+},
+{
+  "type": "way",
+  "id": 791980803,
+  "center": {
+    "lat": 14.1436847,
+    "lon": 121.4137906
+  },
+  "tags": {
+    "addr:city": "Nagcarlan",
+    "addr:postcode": "4002",
+    "addr:province": "Laguna",
+    "amenity": "school",
+    "isced:level": "1",
+    "name": "Talangan Elementary School",
+    "name:en": "Talangan Elementary School",
+    "name:tl": "Paaralang Elementarya ng Talangan",
+    "operator": "Nagcarlan-Rizal District, Laguna School Division, DepEd",
+    "operator:type": "public",
+    "population:pupils:2012": "258",
+    "population:pupils:2015": "285",
+    "ref": "108369",
+    "source": "Department of Education, Philippines",
+    "source:date": "2012",
+    "start_date": "1971"
+  }
+},
+{
+  "type": "way",
+  "id": 791980820,
+  "center": {
+    "lat": 14.1795016,
+    "lon": 121.4085294
+  },
+  "tags": {
+    "addr:city": "Nagcarlan",
+    "addr:postcode": "4002",
+    "addr:province": "Laguna",
+    "amenity": "school",
+    "isced:level": "1",
+    "name": "Santa Lucia Elementary School",
+    "name:en": "Santa Lucia Elementary School",
+    "name:tl": "Paaralang Elementarya ng Santa Lucia",
+    "operator": "Nagcarlan-Rizal District, Laguna School Division, DepEd",
+    "operator:type": "public",
+    "population:pupils:2012": "509",
+    "population:pupils:2015": "600",
+    "ref": "108366",
+    "source": "Department of Education, Philippines",
+    "source:date": "2012",
+    "start_date": "1939"
+  }
+},
+{
+  "type": "way",
+  "id": 791980824,
+  "center": {
+    "lat": 14.1975286,
+    "lon": 121.4006745
+  },
+  "tags": {
+    "addr:city": "Nagcarlan",
+    "addr:postcode": "4002",
+    "addr:province": "Laguna",
+    "addr:village": "Calumpang",
+    "amenity": "school",
+    "isced:level": "2",
+    "name": "Calumpang National High School",
+    "name:en": "Calumpang National High School",
+    "name:tl": "Pambansang Mataas na Paaralan ng Calumpang",
+    "operator": "Nagcarlan-Rizal District, Laguna School Division, DepEd",
+    "operator:type": "public",
+    "population:pupils:2012": "1077",
+    "population:pupils:2015": "1077",
+    "previously": "node:1439057201",
+    "ref": "301236",
+    "source": "Department of Education, Philippines",
+    "source:date": "2012",
+    "start_date": "1966"
+  }
+},
+{
+  "type": "way",
+  "id": 791980827,
+  "center": {
+    "lat": 14.1975616,
+    "lon": 121.4000660
+  },
+  "tags": {
+    "addr:city": "Nagcarlan",
+    "addr:postcode": "4002",
+    "addr:province": "Laguna",
+    "addr:village": "Kabubuhayan",
+    "amenity": "school",
+    "isced:level": "1",
+    "name": "Kabubuhayan Elementary School",
+    "name:en": "Kabubuhayan Elementary School",
+    "name:tl": "Paaralang Elementarya ng Kabubuhayan",
+    "operator": "Nagcarlan-Rizal District, Laguna School Division, DepEd",
+    "operator:type": "public",
+    "population:pupils:2012": "591",
+    "population:pupils:2015": "659",
+    "ref": "108358",
+    "source": "Department of Education, Philippines",
+    "source:date": "2012",
+    "start_date": "1937"
+  }
+},
+{
+  "type": "way",
+  "id": 791980855,
+  "center": {
+    "lat": 14.2099330,
+    "lon": 121.3988399
+  },
+  "tags": {
+    "addr:city": "Liliw",
+    "addr:postcode": "4004",
+    "addr:province": "Laguna",
+    "addr:village": "Mojon",
+    "amenity": "school",
+    "isced:level": "1",
+    "name": "Mojon Elementary School",
+    "name:en": "Mojon Elementary School",
+    "name:tl": "Paaralang Elementarya ng Mojon",
+    "operator": "Liliw District, Laguna School Division, DepEd",
+    "operator:type": "public",
+    "population:pupils:2012": "303",
+    "population:pupils:2015": "329",
+    "previously": "node:1439054804",
+    "ref": "108298",
+    "source": "Department of Education, Philippines",
+    "source:date": "2012",
+    "start_date": "1954"
+  }
+},
+{
+  "type": "way",
+  "id": 792009899,
+  "center": {
+    "lat": 14.2165123,
+    "lon": 121.3738143
+  },
+  "tags": {
+    "addr:postcode": "4010",
+    "addr:province": "Laguna",
+    "addr:town": "Pila",
+    "addr:village": "Pansol",
+    "amenity": "school",
+    "isced:level": "1",
+    "name": "Pansol Elementary School",
+    "name:en": "Pansol Elementary School",
+    "name:tl": "Paaralang Elementarya ng Pansol",
+    "operator": "Pila District, Laguna School Division, DepEd",
+    "operator:type": "public",
+    "population:pupils:2012": "355",
+    "population:pupils:2015": "407",
+    "previously": "node:1589080439",
+    "ref": "108410",
+    "source": "Department of Education, Philippines",
+    "source:date": "2012",
+    "start_date": "1972"
+  }
+},
+{
+  "type": "way",
+  "id": 792009908,
+  "center": {
+    "lat": 14.2202553,
+    "lon": 121.3829948
+  },
+  "tags": {
+    "addr:city": "Pila",
+    "addr:postcode": "4010",
+    "addr:province": "Laguna",
+    "addr:village": "Concepcion",
+    "amenity": "school",
+    "isced:level": "1",
+    "name": "Concepcion-Mojon Elementary School",
+    "name:en": "Concepcion-Mojon Elementary School",
+    "name:tl": "Paaralang Elementarya ng Concepcion-Mojon",
+    "operator": "Pila District, Laguna School Division, DepEd",
+    "operator:type": "public",
+    "population:pupils:2012": "212",
+    "population:pupils:2015": "246",
+    "ref": "108406",
+    "source": "Department of Education, Philippines",
+    "source:date": "2012",
+    "start_date": "2000"
+  }
+},
+{
+  "type": "way",
+  "id": 792009914,
+  "center": {
+    "lat": 14.2039912,
+    "lon": 121.3725426
+  },
+  "tags": {
+    "addr:city": "Pila",
+    "addr:postcode": "4010",
+    "addr:province": "Laguna",
+    "addr:village": "San Miguel",
+    "amenity": "school",
+    "isced:level": "1",
+    "name": "San Miguel Elementary School",
+    "name:en": "San Miguel Elementary School",
+    "name:tl": "Paaralang Elementarya ng San Miguel",
+    "operator": "Pila District, Laguna School Division, DepEd",
+    "operator:type": "public",
+    "population:pupils:2012": "262",
+    "population:pupils:2015": "305",
+    "ref": "108415",
+    "source": "Department of Education, Philippines",
+    "source:date": "2012",
+    "start_date": "1980"
+  }
+},
+{
+  "type": "way",
+  "id": 792009920,
+  "center": {
+    "lat": 14.2068384,
+    "lon": 121.3799894
+  },
+  "tags": {
+    "addr:city": "Pila",
+    "addr:postcode": "4010",
+    "addr:province": "Laguna",
+    "addr:village": "Masico",
+    "amenity": "school",
+    "isced:level": "1",
+    "name": "Masico Elementary School",
+    "name:en": "Masico Elementary School",
+    "name:tl": "Paaralang Elementarya ng Masico",
+    "operator": "Pila District, Laguna School Division, DepEd",
+    "operator:type": "public",
+    "population:pupils:2012": "420",
+    "population:pupils:2015": "467",
+    "ref": "108409",
+    "source": "Department of Education, Philippines",
+    "source:date": "2012",
+    "start_date": "1968"
+  }
+},
+{
+  "type": "way",
+  "id": 792009924,
+  "center": {
+    "lat": 14.1857751,
+    "lon": 121.3778849
+  },
+  "tags": {
+    "addr:city": "Nagcarlan",
+    "addr:neighbourhood": "Purok 5",
+    "addr:postcode": "4002",
+    "addr:province": "Laguna",
+    "addr:village": "Banca-banca",
+    "amenity": "school",
+    "isced:level": "0-1",
+    "name": "Banka-Banka Elementary School",
+    "name:en": "Banka-Banka Elementary School",
+    "name:tl": "Paaralang Elementarya ng Banka-Banka",
+    "operator": "Nagcarlan-Rizal District, Laguna School Division, DepEd",
+    "operator:type": "public",
+    "population:pupils:2012": "266",
+    "population:pupils:2015": "302",
+    "ref": "108355",
+    "source": "Department of Education, Philippines",
+    "source:date": "2012",
+    "start_date": "1971"
+  }
+},
+{
+  "type": "way",
+  "id": 792009943,
+  "center": {
+    "lat": 14.1790008,
+    "lon": 121.3742171
+  },
+  "tags": {
+    "addr:city": "Nagcarlan",
+    "addr:postcode": "4002",
+    "addr:province": "Laguna",
+    "addr:village": "Maravilla",
+    "alt_name": "Lowland National High School – Annex",
+    "amenity": "school",
+    "isced:level": "2-3",
+    "name": "Calumpang National High School – Lowland Annex",
+    "name:en": "Calumpang National High School – Lowland Annex",
+    "name:tl": "Pambansang Mataas na Paaralan ng Calumpang – Lowland Annex",
+    "operator": "Nagcarlan-Rizal District, Laguna School Division, DepEd",
+    "operator:type": "public",
+    "population:pupils:2012": "266",
+    "population:pupils:2015": "266",
+    "ref": "301237",
+    "source": "Department of Education, Philippines",
+    "source:date": "2012",
+    "start_date": "2002"
+  }
+},
+{
+  "type": "way",
+  "id": 792009951,
+  "center": {
+    "lat": 14.1796055,
+    "lon": 121.3740559
+  },
+  "tags": {
+    "addr:city": "Nagcarlan",
+    "addr:postcode": "4002",
+    "addr:province": "Laguna",
+    "addr:village": "Maravilla",
+    "amenity": "school",
+    "isced:level": "1",
+    "name": "Manaol Elementary School",
+    "name:en": "Manaol Elementary School",
+    "name:tl": "Paaralang Elementarya ng Manaol",
+    "operator": "Nagcarlan-Rizal District, Laguna School Division, DepEd",
+    "operator:type": "public",
+    "population:pupils:2012": "148",
+    "population:pupils:2015": "148",
+    "ref": "108361",
+    "source": "Department of Education, Philippines",
+    "source:date": "2012",
+    "start_date": "2000"
+  }
+},
+{
+  "type": "way",
+  "id": 792009965,
+  "center": {
+    "lat": 14.1056290,
+    "lon": 121.4404136
+  },
+  "tags": {
+    "addr:city": "Nagcarlan",
+    "addr:postcode": "4002",
+    "addr:province": "Laguna",
+    "addr:village": "Silangan Lazaan",
+    "amenity": "school",
+    "isced:level": "1",
+    "name": "Lazaan-Malinao Elementary School",
+    "name:en": "Lazaan-Malinao Elementary School",
+    "name:tl": "Paaralang Elementarya ng Lazaan-Malinao",
+    "operator": "Nagcarlan-Rizal District, Laguna School Division, DepEd",
+    "operator:type": "public",
+    "population:pupils:2012": "387",
+    "population:pupils:2015": "447",
+    "ref": "108360",
+    "source": "Department of Education, Philippines",
+    "source:date": "2012",
+    "start_date": "1920"
+  }
+},
+{
+  "type": "way",
+  "id": 792009966,
+  "center": {
+    "lat": 14.1056965,
+    "lon": 121.4410492
+  },
+  "tags": {
+    "addr:city": "Nagcarlan",
+    "addr:postcode": "4002",
+    "addr:province": "Laguna",
+    "amenity": "school",
+    "isced:level": "2-3",
+    "name": "Upland National High School",
+    "name:en": "Upland National High School",
+    "name:tl": "Pambansang Mataas na Paaralan ng Upland",
+    "operator": "Nagcarlan-Rizal District, Laguna School Division, DepEd",
+    "operator:type": "public",
+    "population:pupils:2012": "303",
+    "population:pupils:2015": "303",
+    "ref": "301278",
+    "source": "Department of Education, Philippines",
+    "source:date": "2012",
+    "start_date": "1975"
+  }
+},
+{
+  "type": "way",
+  "id": 792009983,
+  "center": {
+    "lat": 14.0873019,
+    "lon": 121.4399917
+  },
+  "tags": {
+    "addr:city": "Nagcarlan",
+    "addr:postcode": "4002",
+    "addr:province": "Laguna",
+    "amenity": "school",
+    "isced:level": "1",
+    "name": "Abo-Bukal Elementary School",
+    "name:en": "Abo-Bukal Elementary School",
+    "name:tl": "Paaralang Elementarya ng Abo-Bukal",
+    "operator": "Nagcarlan-Rizal District, Laguna School Division, DepEd",
+    "operator:type": "public",
+    "population:pupils:2012": "198",
+    "population:pupils:2015": "221",
+    "ref": "108351",
+    "source": "Department of Education, Philippines",
+    "source:date": "2012",
+    "start_date": "1991"
+  }
+},
+{
+  "type": "way",
+  "id": 792009990,
+  "center": {
+    "lat": 14.1107178,
+    "lon": 121.4298617
+  },
+  "tags": {
+    "addr:city": "Nagcarlan",
+    "addr:hamlet": "Sitio 1",
+    "addr:postcode": "4002",
+    "addr:province": "Laguna",
+    "addr:village": "Silangan Napapatid",
+    "amenity": "school",
+    "isced:level": "1",
+    "name": "Silangan Napapatid Elementary School",
+    "name:en": "Silangan Napapatid Elementary School",
+    "name:tl": "Paaralang Elementarya ng Silangan Napapatid",
+    "operator": "Nagcarlan-Rizal District, Laguna School Division, DepEd",
+    "operator:type": "public",
+    "population:pupils:2012": "77",
+    "population:pupils:2015": "94",
+    "ref": "108367",
+    "source": "Department of Education, Philippines",
+    "source:date": "2012",
+    "start_date": "1975"
+  }
+},
+{
+  "type": "way",
+  "id": 792009994,
+  "center": {
+    "lat": 14.1151763,
+    "lon": 121.4160148
+  },
+  "tags": {
+    "addr:city": "Nagcarlan",
+    "addr:postcode": "4002",
+    "addr:province": "Laguna",
+    "addr:village": "Banago",
+    "amenity": "school",
+    "isced:level": "2-3",
+    "name": "Plaridel National High School",
+    "name:en": "Plaridel National High School",
+    "name:tl": "Pambansang Mataas na Paaralan ng Plaridel",
+    "old_name": "Plaridel Barangay High School",
+    "operator": "Nagcarlan-Rizal District, Laguna School Division, DepEd",
+    "operator:type": "public",
+    "population:pupils:2012": "1554",
+    "population:pupils:2015": "1560",
+    "ref": "301258",
+    "start_date": "1969"
+  }
+},
+{
+  "type": "way",
+  "id": 792010001,
+  "center": {
+    "lat": 14.1063138,
+    "lon": 121.4235130
+  },
+  "tags": {
+    "addr:city": "Nagcarlan",
+    "addr:postcode": "4002",
+    "addr:province": "Laguna",
+    "addr:village": "San Francisco",
+    "amenity": "school",
+    "isced:level": "1",
+    "name": "San Francisco Elementary School",
+    "name:en": "San Francisco Elementary School",
+    "name:tl": "Paaralang Elementarya ng San Francisco",
+    "operator": "Nagcarlan-Rizal District, Laguna School Division, DepEd",
+    "operator:type": "public",
+    "population:pupils:2012": "373",
+    "population:pupils:2015": "429",
+    "ref": "108365",
+    "source": "Department of Education, Philippines",
+    "source:date": "2012",
+    "start_date": "1975"
+  }
+},
+{
+  "type": "way",
+  "id": 792010020,
+  "center": {
+    "lat": 14.1103081,
+    "lon": 121.4143270
+  },
+  "tags": {
+    "addr:city": "Nagcarlan",
+    "addr:postcode": "4002",
+    "addr:province": "Laguna",
+    "addr:village": "Taytay",
+    "amenity": "school",
+    "isced:level": "0-1",
+    "name": "Taytay-Malaya Elementary School",
+    "name:en": "Taytay-Malaya Elementary School",
+    "name:tl": "Paaralang Elementarya ng Taytay-Malaya",
+    "operator": "Nagcarlan-Rizal District, Laguna School Division, DepEd",
+    "operator:type": "public",
+    "population:pupils:2012": "656",
+    "population:pupils:2015": "764",
+    "ref": "108370",
+    "source": "Department of Education, Philippines",
+    "source:date": "2012",
+    "start_date": "1957"
+  }
+},
+{
+  "type": "way",
+  "id": 792010021,
+  "center": {
+    "lat": 14.1098633,
+    "lon": 121.4035727
+  },
+  "tags": {
+    "addr:city": "Rizal",
+    "addr:postcode": "4003",
+    "addr:province": "Laguna",
+    "addr:village": "Pook",
+    "amenity": "school",
+    "isced:level": "0-1",
+    "name": "Pook Elementary School",
+    "name:en": "Pook Elementary School",
+    "name:tl": "Paaralang Elementarya ng Pook",
+    "operator": "Nagcarlan-Rizal District, Laguna School Division, DepEd",
+    "operator:type": "public",
+    "population:pupils:2012": "403",
+    "population:pupils:2015": "459",
+    "ref": "108363",
+    "source": "Department of Education, Philippines",
+    "source:date": "2012",
+    "start_date": "1970"
+  }
+},
+{
+  "type": "way",
+  "id": 792034874,
+  "center": {
+    "lat": 14.2165167,
+    "lon": 121.4527744
+  },
+  "tags": {
+    "addr:postcode": "4007",
+    "addr:province": "Laguna",
+    "addr:town": "Magdalena",
+    "addr:village": "Balanac",
+    "amenity": "school",
+    "isced:level": "1",
+    "name": "Balanac Elementary School",
+    "name:en": "Balanac Elementary School",
+    "name:tl": "Paaralang Elementarya ng Balanac",
+    "operator": "Magdalena District of Laguna Schools Division, DepEd",
+    "operator:type": "public",
+    "population:pupils:2012": "160",
+    "population:pupils:2015": "185",
+    "ref": "108338",
+    "source": "Department of Education, Philippines",
+    "source:date": "2012",
+    "start_date": "2000"
+  }
+},
+{
+  "type": "way",
+  "id": 792034876,
+  "center": {
+    "lat": 14.1814713,
+    "lon": 121.4277863
+  },
+  "tags": {
+    "addr:postcode": "4007",
+    "addr:province": "Laguna",
+    "addr:town": "Magdalena",
+    "amenity": "school",
+    "isced:level": "1",
+    "name": "Bungkol Elementary School",
+    "name:en": "Bungkol Elementary School",
+    "name:tl": "Paaralang Elementarya ng Bungkol",
+    "operator": "Magdalena District of Laguna Schools Division, DepEd",
+    "operator:type": "public",
+    "population:pupils:2012": "259",
+    "population:pupils:2015": "297",
+    "ref": "108340",
+    "source": "Department of Education, Philippines",
+    "source:date": "2012",
+    "start_date": "1961"
+  }
+},
+{
+  "type": "way",
+  "id": 792034894,
+  "center": {
+    "lat": 14.1972907,
+    "lon": 121.4298359
+  },
+  "tags": {
+    "addr:city": "Magdalena",
+    "addr:postcode": "4007",
+    "addr:province": "Laguna",
+    "addr:street": "Bautista Street",
+    "addr:village": "Malaking Ambling",
+    "amenity": "school",
+    "isced:level": "2-3",
+    "name": "Magdalena National High School – Buenavista Annex",
+    "name:en": "Magdalena National High School – Buenavista Annex",
+    "name:tl": "Pambansang Mataas na Paaralan ng Magdalena – Buenavista Annex",
+    "operator": "Magdalena District",
+    "operator:type": "government",
+    "operator:wikidata": "Q130249799",
+    "population:pupils:2012": "971",
+    "population:pupils:2015": "971",
+    "ref": "307937",
+    "source": "Department of Education, Philippines",
+    "source:date": "2012",
+    "start_date": "2008"
+  }
+},
+{
+  "type": "way",
+  "id": 792074441,
+  "center": {
+    "lat": 14.1509286,
+    "lon": 121.4927423
+  },
+  "tags": {
+    "addr:hamlet": "Quipot",
+    "addr:neighbourhood": "Quipot",
+    "addr:postcode": "4005",
+    "addr:province": "Laguna",
+    "addr:town": "Majayjay",
+    "addr:village": "Bakia",
+    "amenity": "school",
+    "isced:level": "2",
+    "name": "Santa Catalina National High School Extension – Bakia-Botocan",
+    "operator": "Majayjay District",
+    "operator:type": "government",
+    "operator:wikidata": "Q130249799",
+    "population:pupils:2012": "80",
+    "population:pupils:2015": "80",
+    "previously": "node:7202394967",
+    "ref": "307922",
+    "source": "Department of Education, Philippines",
+    "source:date": "2012",
+    "start_date": "2006"
+  }
+},
+{
+  "type": "way",
+  "id": 792074442,
+  "center": {
+    "lat": 14.1678820,
+    "lon": 121.4004205
+  },
+  "tags": {
+    "addr:city": "Nagcarlan",
+    "addr:hamlet": "Sitio 1",
+    "addr:postcode": "4002",
+    "addr:province": "Laguna",
+    "amenity": "school",
+    "isced:level": "1",
+    "name": "Labangan Elementary School",
+    "name:en": "Labangan Elementary School",
+    "name:tl": "Paaralang Elementarya ng Labangan",
+    "operator": "Nagcarlan-Rizal District, Laguna School Division, DepEd",
+    "operator:type": "public",
+    "population:pupils:2012": "52",
+    "population:pupils:2015": "55",
+    "ref": "108359",
+    "source": "Department of Education, Philippines",
+    "source:date": "2012",
+    "start_date": "1995"
+  }
+},
+{
+  "type": "way",
+  "id": 792074447,
+  "center": {
+    "lat": 14.1283941,
+    "lon": 121.4395251
+  },
+  "tags": {
+    "addr:city": "Liliw",
+    "addr:postcode": "4004",
+    "addr:province": "Laguna",
+    "addr:street": "Evasco Road",
+    "amenity": "school",
+    "isced:level": "2-3",
+    "name": "Liliw National High School",
+    "old_name": "Bukal National High School",
+    "operator": "Liliw District",
+    "operator:type": "government",
+    "operator:wikidata": "Q130249799",
+    "population:pupils:2012": "1399",
+    "population:pupils:2015": "1399",
+    "ref": "301244",
+    "source": "Department of Education, Philippines",
+    "source:date": "2012",
+    "start_date": "1971"
+  }
+},
+{
+  "type": "way",
+  "id": 795617416,
+  "center": {
+    "lat": 14.1320621,
+    "lon": 121.4136246
+  },
+  "tags": {
+    "amenity": "school",
+    "fixme": "name"
+  }
+},
+{
+  "type": "way",
+  "id": 814598008,
+  "center": {
+    "lat": 14.2150263,
+    "lon": 121.4913967
+  },
+  "tags": {
+    "addr:postcode": "4032",
+    "addr:street": "Cavinti - Luisiana Road",
+    "addr:town": "Luisiana",
+    "amenity": "townhall",
+    "building": "civic",
+    "name": "San Salvador Barangay Multipurpose Hall",
+    "townhall:type": "barangay"
+  }
+},
+{
+  "type": "way",
+  "id": 822917124,
+  "center": {
+    "lat": 14.1565412,
+    "lon": 121.4906352
+  },
+  "tags": {
+    "addr:province": "Laguna",
+    "addr:town": "Majayjay",
+    "addr:village": "Bakia",
+    "amenity": "school",
+    "isced:level": "1",
+    "name": "Bakia-Botocan Elementary School",
+    "operator": "Majayjay District",
+    "operator:type": "government",
+    "operator:wikidata": "Q130249799",
+    "population:pupils:2012": "183",
+    "population:pupils:2015": "215",
+    "ref": "108344",
+    "source": "Department of Education, Philippines",
+    "source:date": "2012",
+    "start_date": "1919"
+  }
+},
+{
+  "type": "way",
+  "id": 849078119,
+  "center": {
+    "lat": 14.2166564,
+    "lon": 121.4886533
+  },
+  "tags": {
+    "addr:province": "Laguna",
+    "addr:town": "Luisiana",
+    "addr:village": "San Salvador",
+    "amenity": "school",
+    "isced:level": "1",
+    "name": "San Salvador Elementary School",
+    "operator": "Luisiana District of Laguna Schools Division, DepEd",
+    "operator:type": "public",
+    "population:pupils:2012": "95",
+    "population:pupils:2015": "107",
+    "ref": "108321",
+    "source": "Department of Education, Philippines",
+    "source:date": "2012",
+    "start_date": "1938"
+  }
+},
+{
+  "type": "way",
+  "id": 849112746,
+  "center": {
+    "lat": 14.2011848,
+    "lon": 121.4000038
+  },
+  "tags": {
+    "abbr_name": "MCA",
+    "addr:city": "Liliw",
+    "addr:postcode": "4004",
+    "amenity": "school",
+    "name": "Maranatha Christian Academy of Liliw",
+    "operator": "Maranatha Christian Academy-National Christian Life College School System",
+    "operator:type": "private",
+    "religion": "christian",
+    "short_name": "MCA Liliw"
+  }
+},
+{
+  "type": "way",
+  "id": 960088203,
+  "center": {
+    "lat": 14.1382645,
+    "lon": 121.4104996
+  },
+  "tags": {
+    "addr:city": "Nagcarlan",
+    "addr:neighbourhood": "Montserrat Subdivision",
+    "addr:postcode": "4002",
+    "addr:province": "Laguna",
+    "addr:village": "Yukos",
+    "amenity": "school",
+    "facebook": "https://www.facebook.com/YESAnnex",
+    "isced:level": "1",
+    "name": "Yukos Elementary School – Annex",
+    "name:en": "Yukos Elementary School – Annex",
+    "name:tl": "Paaralang Elementarya ng Yukos – Annex",
+    "operator": "Nagcarlan-Rizal District, Laguna School Division, DepEd",
+    "operator:type": "public",
+    "population:pupils:2012": "225",
+    "population:pupils:2015": "256",
+    "ref": "108373",
+    "source": "Department of Education, Philippines",
+    "source:date": "2012",
+    "start_date": "2003"
+  }
+},
+{
+  "type": "way",
+  "id": 985019716,
+  "center": {
+    "lat": 14.1151893,
+    "lon": 121.4311579
+  },
+  "tags": {
+    "addr:city": "Nagcarlan",
+    "addr:housenumber": "766",
+    "addr:neighbourhood": "Reposa Ville",
+    "addr:postcode": "4002",
+    "addr:province": "Laguna",
+    "amenity": "school",
+    "isced:level": "1",
+    "name": "Sinipian Elementary School",
+    "name:en": "Sinipian Elementary School",
+    "name:tl": "Paaralang Elementarya ng Sinipian",
+    "operator": "Nagcarlan-Rizal District, Laguna School Division, DepEd",
+    "operator:type": "public",
+    "population:pupils:2015": "144",
+    "ref": "108368",
+    "source": "Department of Education, Philippines",
+    "source:date": "2012",
+    "start_date": "1925"
+  }
+},
+{
+  "type": "way",
+  "id": 985020770,
+  "center": {
+    "lat": 14.1843620,
+    "lon": 121.3954544
+  },
+  "tags": {
+    "amenity": "school"
+  }
+},
+{
+  "type": "way",
+  "id": 985023066,
+  "center": {
+    "lat": 14.2239367,
+    "lon": 121.3992536
+  },
+  "tags": {
+    "addr:city": "Oogong, Santa Cruz",
+    "addr:postcode": "4009",
+    "addr:province": "Laguna",
+    "amenity": "school",
+    "grades": "7-12",
+    "name": "Santa Cruz Integrated National High School"
+  }
+},
+{
+  "type": "way",
+  "id": 1008099548,
+  "center": {
+    "lat": 14.1958235,
+    "lon": 121.3774748
+  },
+  "tags": {
+    "addr:postcode": "4004",
+    "addr:province": "Laguna",
+    "addr:town": "Liliw",
+    "addr:village": "Daniw",
+    "amenity": "school",
+    "isced:level": "1",
+    "name": "Daniw Elementary School",
+    "name:en": "Daniw Elementary School",
+    "name:tl": "Paaralang Elementarya ng Daniw",
+    "operator": "Liliw District, Laguna School Division, DepEd",
+    "operator:type": "public",
+    "population:pupils:2012": "133",
+    "population:pupils:2015": "147",
+    "ref": "108295",
+    "source": "Department of Education, Philippines",
+    "source:date": "2012",
+    "start_date": "1969"
+  }
+},
+{
+  "type": "way",
+  "id": 1030848462,
+  "center": {
+    "lat": 14.1530421,
+    "lon": 121.4387432
+  },
+  "tags": {
+    "addr:city": "Liliw",
+    "addr:place": "Tuy-Baanan",
+    "addr:province": "Laguna",
+    "amenity": "school",
+    "isced:level": "1;0",
+    "name": "Francisco S. Brosas Memorial Elementary School",
+    "operator": "Liliw District, Laguna Schools Division, DepEd",
+    "operator:type": "public",
+    "population:pupils:2012": "235",
+    "population:pupils:2015": "257",
+    "ref": "108296",
+    "source": "Department of Education, Philippines",
+    "source:date": "2012",
+    "start_date": "2000"
+  }
+},
+{
+  "type": "way",
+  "id": 1034070975,
+  "center": {
+    "lat": 14.1298033,
+    "lon": 121.4361004
+  },
+  "tags": {
+    "amenity": "school",
+    "name": "Liceo de Liliw"
+  }
+},
+{
+  "type": "way",
+  "id": 1036286809,
+  "center": {
+    "lat": 14.1428037,
+    "lon": 121.4390075
+  },
+  "tags": {
+    "addr:postcode": "4004",
+    "addr:province": "Laguna",
+    "addr:town": "Liliw",
+    "addr:village": "Bungkol",
+    "amenity": "school",
+    "isced:level": "3",
+    "name": "Liliw Senior High School",
+    "name:en": "Liliw Senior High School",
+    "name:tl": "Mataas na Paaralang Senyor ng Liliw",
+    "operator": "Liliw District, Laguna School Division, DepEd",
+    "operator:type": "public"
+  }
+},
+{
+  "type": "way",
+  "id": 1148120771,
+  "center": {
+    "lat": 14.1985073,
+    "lon": 121.4298445
+  },
+  "tags": {
+    "addr:street": "Andres Bonifacio Street",
+    "addr:town": "Magdalena",
+    "amenity": "doctors",
+    "building": "yes",
+    "healthcare": "doctor",
+    "name": "Magdalena Rural Health Unit",
+    "source_ref": "https://www.bing.com/maps?cp=14.198535%7E121.429865&lvl=19.0&style=x&dir=337.3&pi=4.4"
+  }
+},
+{
+  "type": "way",
+  "id": 1148125996,
+  "center": {
+    "lat": 14.2066812,
+    "lon": 121.4301077
+  },
+  "tags": {
+    "addr:place": "Salasad",
+    "admin_level": "10",
+    "amenity": "townhall",
+    "building": "civic",
+    "name": "Bahay Pamahalaan ng Barangay Salasad",
+    "name:en": "Salasad Barangay Hall",
+    "name:tl": "Bahay Pamahalaan ng Barangay Salasad",
+    "townhall:type": "barangay"
+  }
+},
+{
+  "type": "way",
+  "id": 1470204174,
+  "center": {
+    "lat": 14.1345898,
+    "lon": 121.4362566
+  },
+  "tags": {
+    "addr:postcode": "4004",
+    "addr:province": "Laguna",
+    "addr:town": "Liliw",
+    "addr:village": "Ibabang Taykin",
+    "amenity": "school",
+    "contact:facebook": "https://www.facebook.com/DepedTayoTES108301",
+    "isced:level": "1",
+    "name": "Taykin Elementary School",
+    "operator": "Liliw District of Laguna Schools Division, DepEd",
+    "operator:type": "public",
+    "population:pupils:2012": "456",
+    "population:pupils:2015": "496",
+    "ref": "108301",
+    "source": "Department of Education, Philippines",
+    "source:date": "2012",
+    "start_date": "2000"
+  }
+},
+{
+  "type": "relation",
+  "id": 18068022,
+  "center": {
+    "lat": 14.1470454,
+    "lon": 121.4713498
+  },
+  "tags": {
+    "addr2:street": "F. Balagtas Street",
+    "addr:postcode": "4005",
+    "addr:province": "Laguna",
+    "addr:quarter": "Origuel",
+    "addr:street": "A. Regidor Street",
+    "addr:town": "Majayjay",
+    "amenity": "school",
+    "isced:level": "0-1",
+    "name": "Santa Catalina Elementary School",
+    "operator": "Majayjay District",
+    "operator:type": "government",
+    "operator:wikidata": "Q130249799",
+    "population:pupils:2012": "601",
+    "population:pupils:2015": "694",
+    "ref": "108349",
+    "source": "Department of Education, Philippines",
+    "source:date": "2012",
+    "start_date": "1909",
+    "type": "multipolygon"
+  }
+}
+
+  ]
+}
