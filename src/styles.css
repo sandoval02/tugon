@@ -52,8 +52,8 @@
 @property --nav-space { syntax: "<length>"; inherits: true; initial-value: 0px; }
 :root { --nav-space: calc(var(--nav-h) + var(--nav-gap)); transition: --nav-space 0.45s cubic-bezier(.2,.8,.2,1); }
 :root.nav-away { --nav-space: 0px; }
-/* Desktop runs at 75% scale (everything is in rem). Phones and small tablets stay at 100% so text stays readable. */
-@media (min-width: 1024px) { html { font-size: 75%; } }
+/* The whole design runs at 75% scale (everything is in rem), phones included. */
+html { font-size: 75%; }
 *, *::before, *::after { box-sizing: border-box; }
 html { scroll-behavior: smooth; scroll-padding-top: calc(var(--nav-h) + 1rem); -webkit-text-size-adjust: 100%; }
 body {
@@ -625,3 +625,9 @@ p { margin: 0; }
 
 /* footer: a small turning Liliw */
 .footer-terrain { width: 8rem; height: 5.5rem; margin: -1.5rem -0.75rem -1.5rem -1rem; }
+
+/* last, so it wins: on phones form fields stay 16px (smaller makes iOS Safari zoom in on tap), key buttons stay thumb-sized */
+@media (max-width: 1023px) {
+  input, select, textarea, .search input, .bgy-select select { font-size: 16px; }
+  .btn, .fab-btn, .tel, .ch-pill { min-height: 44px; }
+}
