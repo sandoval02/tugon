@@ -82,7 +82,7 @@ function CameraRig({ built, vehicle, selected }) {
     t.zoom += ((p ? 1 : 0) - t.zoom) * ease;
     // [target, offset from target, fit factor]
     const poses = [
-      [v3(0, 0.35, 0), v3(11, 8, 13.4), fit(0.95)],
+      [v3(0, narrow ? 0.1 : 0.35, 0), v3(11, 8, 13.4), fit(0.95) * (narrow ? 0.7 : 1)], // phones: closer, Liliw fills the hero
       [v3(0, 0, 0), v3(0, 30, 0.6), fit(1.0)],
       [v3(-shift, -0.2, narrow ? 0.3 + 2.9 * t.side : 0.3).lerp(t.focus.clone().setX(t.focus.x - shift * 0.5).setZ(t.focus.z + (narrow ? 2 : 0)), t.zoom * 0.85), v3(0, 9.4, 11.6), fit(1.0) * (1 - t.zoom * 0.2)],
       [follow, v3(10.5, 4.6, 0.8), fit(0.9)], // low side view from the east: Mt. Banahaw left, the hall right
@@ -480,7 +480,7 @@ function HeroExtras({ built, colors, theme }) {
 }
 
 function World({ data, theme, reduced, selected, onSelect, onBuilt, onLayer, chapter, panelOpen, missionOpen, note, feature, status }) {
-  const { gl } = useThree();
+  const { gl, size } = useThree();
   const colors = PALETTE[theme];
   const built = useMemo(() => getLiliw(data), [data]);
   const shared = useMemo(() => makeSharedUniforms(), []);
@@ -511,7 +511,9 @@ function World({ data, theme, reduced, selected, onSelect, onBuilt, onLayer, cha
 
   useFrame(({ clock }) => {
     shared.uMap.value = S.map;
-    model.current.rotation.y = S.rot + (reduced ? 0 : S.sway * 0.16 * Math.sin(clock.elapsedTime * 0.22));
+    // phones: on the hero, turn Liliw so its length runs down the tall screen (sway fades to 0 as the story starts)
+    const tall = size.width / size.height < 0.8 ? 0.75 * S.sway : 0;
+    model.current.rotation.y = S.rot + tall + (reduced ? 0 : S.sway * 0.16 * Math.sin(clock.elapsedTime * 0.22));
   });
 
   return (
