@@ -27,6 +27,9 @@ export const S = {
   hideMission: false,
   feature: 0, // app chapter: which feature is playing 0..6 (scroll-driven)
   appOn: false, // the app chapter owns the barangay highlights
+  appX: 0, appY: 0, appZ: 0, // app chapter: the playing feature's focus point
+  appSpan: 0, // ...and how much ground it needs in view (0 = the whole of Liliw)
+  appYaw: 0, // ...and a turn of the viewing angle
 };
 
 export const MISSION_STEPS = [

@@ -11,13 +11,14 @@ import { fmtTime, MISSION_STEPS, missionStage, S } from "./state";
 import { AppDemo } from "./AppDemo";
 
 const LAYERS = 240;
+const UP = new THREE.Vector3(0, 1, 0);
 const v3 = (x, y, z) => new THREE.Vector3(x, y, z);
 
 // ---------------------------------------------------------------- camera
 function CameraRig({ built, vehicle, selected }) {
   const { camera, size, pointer, gl } = useThree();
   const routeCenter = useMemo(() => new THREE.Box3().setFromPoints(built.route.points).getCenter(v3()), [built]);
-  const t = useMemo(() => ({ pos: v3(), tgt: v3(), a: v3(), b: v3(), focus: v3(), want: v3(), zoom: 0, off: v3(), sph: new THREE.Spherical(), yaw: 0, pitch: 0, scale: 1, panX: 0, panZ: 0, side: 1, mside: 1, right: v3(), fwd: v3() }), []);
+  const t = useMemo(() => ({ pos: v3(), tgt: v3(), a: v3(), b: v3(), focus: v3(), want: v3(), zoom: 0, off: v3(), sph: new THREE.Spherical(), yaw: 0, pitch: 0, scale: 1, panX: 0, panZ: 0, side: 1, mside: 1, right: v3(), fwd: v3(), af: v3(0, 0.55, 0), afWant: v3(), aw: 0, aspan: 3, ayaw: 0, aoff: v3() }), []);
 
   // drag to orbit (mouse: any direction; touch: sideways, since vertical swipes scroll the page)
   useEffect(() => {
@@ -86,9 +87,22 @@ function CameraRig({ built, vehicle, selected }) {
       [v3(0, 0, 0), v3(0, 30, 0.6), fit(1.0)],
       [v3(-shift, -0.2, narrow ? 0.3 + 2.9 * t.side : 0.3).lerp(t.focus.clone().setX(t.focus.x - shift * 0.5).setZ(t.focus.z + (narrow ? 2 : 0)), t.zoom * 0.85), v3(0, 9.4, 11.6), fit(1.0) * (1 - t.zoom * 0.2)],
       [follow, v3(10.5, 4.6, 0.8), fit(0.9)], // low side view from the east: Mt. Banahaw left, the hall right
-      // the app: all of Liliw pulled back; on phones from the south, so its length runs down the screen
-      narrow ? [v3(0.4, 0.5, 0.4), v3(11.5, 20, 8.8), 1] : [v3(0, 0.55, 0), v3(13.5, 6.6, 0.4), fit(1.0)],
+      null, // the app chapter, below
     ];
+    // the app: all of Liliw pulled back (on phones from the south, so its length runs down the screen).
+    // Each feature can zoom to its own place (AppDemo sets S.appX/Y/Z + S.appSpan): the camera glides there at a
+    // lower three-quarter angle and pushes in a little while the feature plays.
+    const glide = 1 - Math.exp(-dt * 1.6);
+    t.af.lerp(t.afWant.set(S.appX, S.appY, S.appZ), glide);
+    t.aw += ((S.appSpan > 0 ? 1 : 0) - t.aw) * glide;
+    if (S.appSpan > 0) t.aspan += (S.appSpan - t.aspan) * glide;
+    t.ayaw += (S.appYaw - t.ayaw) * glide;
+    const whole = narrow ? [v3(0.4, 0.5, 0.4), v3(11.5, 20, 8.8), 1] : [v3(0, 0.55, 0), v3(13.5, 6.6, 0.4), fit(1.0)];
+    const half = THREE.MathUtils.degToRad(camera.fov / 2);
+    const push = 1 - 0.12 * (S.feature % 1);
+    const near = Math.max(3.6, (1.5 * t.aspan) / (2 * Math.tan(half) * Math.min(aspect, 1.8))) * push;
+    t.aoff.copy(narrow ? v3(0.45, 1.25, 0.8) : v3(1, 0.85, 0.7)).normalize().applyAxisAngle(UP, t.ayaw).multiplyScalar(near);
+    poses[4] = [whole[0].clone().lerp(t.af, t.aw), whole[1].clone().multiplyScalar(whole[2]).lerp(t.aoff, t.aw), 1];
     const seg = Math.min(poses.length - 2, Math.floor(S.cam)), f = S.cam - seg;
     const [ta, oa, ka] = poses[seg], [tb, ob, kb] = poses[seg + 1];
     t.tgt.lerpVectors(ta, tb, f);

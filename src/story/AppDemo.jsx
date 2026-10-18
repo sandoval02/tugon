@@ -17,6 +17,18 @@ const smooth = (x) => x * x * (3 - 2 * x);
 const say = (el, text) => { if (el && el.textContent !== text) el.textContent = text; };
 const piece = (built, name) => built.pieces.find((p) => p.meta.name === name);
 const flatKm = (built, a, b) => Math.hypot(a.x - b.x, a.z - b.z) * built.kmPerUnit;
+// zoom the camera to this feature's place while it plays: a point, the ground it needs in view, a turn of the angle
+function useFocus(point, span, yaw = 0) {
+  useLayoutEffect(() => {
+    S.appX = point.x; S.appY = point.y; S.appZ = point.z; S.appSpan = span; S.appYaw = yaw;
+  }, [point, span, yaw]);
+}
+const spanOf = (pts, pad) => {
+  const xs = pts.map((p) => p.x), zs = pts.map((p) => p.z);
+  return Math.max(Math.max(...xs) - Math.min(...xs), Math.max(...zs) - Math.min(...zs)) + pad;
+};
+const centre = (pts) => pts.reduce((s, p) => s.add(p), v3(0, 0, 0)).multiplyScalar(1 / pts.length);
+
 // a line laid on the terrain between two world points
 const drape = (built, a, b, n = 40, lift = 0.03) => Array.from({ length: n + 1 }, (_, i) => {
   const p = a.clone().lerp(b, i / n);
@@ -60,26 +72,34 @@ function BarangayTags({ built, glow }) {
 function Marker({ position, color, height = 0.3, children, place, headRef, ringRef }) {
   const ring = useRef();
   useFrame(({ clock }) => {
-    const k = (clock.elapsedTime % 1.8) / 1.8;
-    ring.current.scale.setScalar(0.5 + k * 3);
-    ring.current.material.opacity = 0.9 * (1 - k);
+    const k = (clock.elapsedTime % 2.4) / 2.4;
+    ring.current.scale.setScalar(1 + k * 2.2);
+    ring.current.material.opacity = 0.5 * (1 - k);
   });
   return (
-    <group position={position} scale={1.6}>
+    <group position={position} scale={1.2}>
       <mesh position-y={height / 2}>
-        <cylinderGeometry args={[0.008, 0.022, height, 10, 1, true]} />
-        <meshBasicMaterial color={color} transparent opacity={0.5} depthWrite={false} side={THREE.DoubleSide} />
+        <cylinderGeometry args={[0.0035, 0.0035, height, 6, 1, true]} />
+        <meshBasicMaterial color={color} transparent opacity={0.85} depthWrite={false} />
       </mesh>
       <mesh position-y={height}>
-        <sphereGeometry args={[0.032, 18, 18]} />
+        <sphereGeometry args={[0.02, 18, 18]} />
         <meshBasicMaterial ref={headRef} color={color} />
       </mesh>
-      <mesh ref={ring} rotation-x={-Math.PI / 2} position-y={0.015}>
-        <ringGeometry args={[0.05, 0.066, 40]} />
+      <mesh position-y={height}>
+        <sphereGeometry args={[0.028, 18, 18]} />
+        <meshBasicMaterial color="#ffffff" side={THREE.BackSide} />
+      </mesh>
+      <mesh rotation-x={-Math.PI / 2} position-y={0.012}>
+        <circleGeometry args={[0.032, 32]} />
+        <meshBasicMaterial color={color} transparent opacity={0.35} depthWrite={false} />
+      </mesh>
+      <mesh ref={ring} rotation-x={-Math.PI / 2} position-y={0.013}>
+        <ringGeometry args={[0.03, 0.036, 48]} />
         <meshBasicMaterial ref={ringRef} color={color} transparent depthWrite={false} />
       </mesh>
       {children && (
-        <Html position-y={height + 0.12} center zIndexRange={[20, 0]}>
+        <Html position-y={height + 0.1} center zIndexRange={[20, 0]}>
           <span className="map-label">{children}{place && <span className="map-label__place"> · {place}</span>}</span>
         </Html>
       )}
@@ -99,6 +119,8 @@ function Report({ ctx }) {
     return new THREE.QuadraticBezierCurve3(a, m, b);
   }, [inc, hq]);
   const pts = useMemo(() => curve.getPoints(64), [curve]);
+  const view = useMemo(() => ({ at: inc.position.clone().lerp(hq.position, 0.5), span: spanOf([inc.position, hq.position], 0.8) }), [inc, hq]);
+  useFocus(view.at, view.span, 0.35);
   const clock = useDemoClock(reduced, ctx.index);
   const packet = useRef(), packetTag = useRef(), trail = useRef(), hqText = useRef();
   useFrame(() => {
@@ -138,6 +160,8 @@ function Tracking({ ctx }) {
     doorL: amb.getObjectByName("door-left"), doorR: amb.getObjectByName("door-right"),
   }), [amb]);
   const scene0 = piece(built, "Ilayang Sungi").index;
+  const view = useMemo(() => ({ at: centre(points.map((p) => p.clone())), span: spanOf(points, 0.6) }), [points]);
+  useFocus(view.at, view.span, -0.25);
   const clock = useDemoClock(reduced, ctx.index);
   const car = useRef(), done = useRef(), eta = useRef(), etaTag = useRef(), siren = useRef(), ahead = useMemo(() => v3(), []);
   useFrame(({ clock: c }) => {
@@ -177,7 +201,7 @@ function Tracking({ ctx }) {
       <Marker position={built.landmarks.hq.position} color={colors.hq} height={0.3} place="Rescue 1">MAT Liliw</Marker>
       <Marker position={built.landmarks.incident.position} color={colors.incident} height={0.3} place="Ilayang Sungi">Landslide</Marker>
       <group ref={car}>
-        <primitive object={amb} scale={0.11} />
+        <primitive object={amb} scale={0.065} />
         <pointLight ref={siren} position-y={0.3} distance={1.4} />
         <Html position-y={0.62} center zIndexRange={[20, 0]}><span ref={etaTag} className="map-label map-label--pin map-label--float"><b ref={eta} /></span></Html>
       </group>
@@ -276,6 +300,8 @@ function Facilities({ ctx }) {
     const rank = all.filter((g) => g.km < f.km).length;
     return { ...f, tag: twin < 0 ? `${tag} · ${f.km.toFixed(1)} km` : null, height: 0.22 + rank * 0.17 };
   }), [built, you]);
+  const view = useMemo(() => ({ at: centre([you.clone(), ...near.map((f) => f.pos.clone())]), span: spanOf([you, ...near.map((f) => f.pos)], 1.6) }), [you, near]);
+  useFocus(view.at, view.span, 0.5);
   const clock = useDemoClock(reduced, ctx.index);
   const radar = useRef(), groups = useRef([]);
   useFrame(() => {
@@ -312,6 +338,8 @@ const ALERT = 3; // Lola
 function Family({ ctx }) {
   const { built, colors, status, reduced } = ctx;
   const homes = useMemo(() => FAMILY.map(([, bgy]) => piece(built, bgy).anchor), [built]);
+  const view = useMemo(() => ({ at: centre(homes.map((h) => h.clone())), span: spanOf(homes, 0.9) }), [homes]);
+  useFocus(view.at, view.span, -0.45);
   const clock = useDemoClock(reduced, ctx.index);
   const members = useRef([]), heads = useRef([]), rings = useRef([]), links = useRef([]), sos = useRef();
   const red = useMemo(() => new THREE.Color(colors.incident), [colors]);
@@ -371,12 +399,16 @@ const clampToScreen = (el, camera, size) => {
 const BAG = ["Water for 3 days", "Flashlight + batteries", "First-aid kit", "Radio", "IDs and documents"];
 const LOWLAND = "Dita"; // 30–59 m, by the lake
 function GoBag({ ctx }) {
-  const { built, colors, status, reduced } = ctx;
+  const { built, colors, glow, status, reduced } = ctx;
   const start = piece(built, LOWLAND).anchor;
   const school = useMemo(() => FACILITIES.filter((f) => f.kind === "school")
     .map((f) => { const pos = built.world(f.uv[0], f.uv[1]); return { ...f, pos, km: flatKm(built, pos, start) }; })
     .sort((a, b) => a.km - b.km)[0], [built, start]);
   const path = useMemo(() => drape(built, start, school.pos, 60), [built, start, school]);
+  const view = useMemo(() => ({ at: start.clone().lerp(school.pos, 0.5), span: spanOf([start, school.pos], 1.1) }), [start, school]);
+  useFocus(view.at, view.span, 0.3);
+  // flood-prone: the lake-level barangays (top under 70 m) are shaded as the warning zone
+  const lowland = useMemo(() => built.pieces.filter((p) => p.meta.elev_m[1] < 70).map((p) => p.index), [built]);
   const clock = useDemoClock(reduced, ctx.index);
   const walker = useRef(), trail = useRef(), items = useRef([]), check = useRef();
   const drops = useMemo(() => {
@@ -396,11 +428,12 @@ function GoBag({ ctx }) {
     walker.current.position.lerpVectors(path[i], path[i + 1], at - i);
     trail.current.geometry.instanceCount = Math.floor(at);
     // rain over the area
-    const a = drops.attributes.position.array, span = 2.4;
+    lowland.forEach((k) => { glow[k].uHi.value = 0.4; });
+    const a = drops.attributes.position.array, span = 1.6;
     seeds.forEach(([x, y, z], k) => {
       const px = start.x + (x - 0.5) * span * 2, pz = start.z + (z - 0.5) * span * 2;
       const py = start.y + 0.05 + ((y * 2.5 - c.elapsedTime * 2.2) % 2.5 + 2.5) % 2.5;
-      a.set([px, py, pz, px - 0.02, py + 0.09, pz], k * 6);
+      a.set([px, py, pz, px - 0.01, py + 0.05, pz], k * 6);
     });
     drops.attributes.position.needsUpdate = true;
     say(status.current, t < 3.3 ? `Typhoon warning for lowland ${LOWLAND} · packing the go-bag (${packed}/${BAG.length})`
@@ -410,11 +443,11 @@ function GoBag({ ctx }) {
   return (
     <>
       <lineSegments geometry={drops}>
-        <lineBasicMaterial color={colors.netHot} transparent opacity={0.45} depthWrite={false} />
+        <lineBasicMaterial color={colors.netHot} transparent opacity={0.22} depthWrite={false} />
       </lineSegments>
       <Line points={path} color={colors.line} lineWidth={1.2} dashed dashSize={0.03} gapSize={0.03} transparent opacity={0.6} depthWrite={false} />
       <Line ref={trail} points={path} color={colors.accent} lineWidth={3} depthWrite={false} />
-      <Marker position={school.pos} color="#e0b03c" height={0.28} place={school.name}>School</Marker>
+      <Marker position={school.pos} color="#e0b03c" height={0.28} place={school.name}>Evacuation site</Marker>
       <group ref={walker}>
         <Marker position={[0, 0, 0]} color={colors.netHot} height={0.18} />
         <Html position-y={0.2} zIndexRange={[20, 0]} calculatePosition={clampToScreen}>
@@ -432,7 +465,8 @@ const DEMOS = [Report, Tracking, Alerts, Facilities, Family, GoBag];
 
 // rendered inside the story's model group while the "app" chapter is on; `glow` = the barangays' highlight uniforms
 export function AppDemo({ built, colors, glow, feature, status, reduced }) {
-  useLayoutEffect(() => { glow.forEach((g) => { g.uHi.value = 0; }); }, [feature, glow]);
+  // reset when a feature ends (cleanup), so the next feature's own focus, set on mount, is what stays
+  useLayoutEffect(() => { glow.forEach((g) => { g.uHi.value = 0; }); return () => { S.appSpan = 0; S.appYaw = 0; }; }, [feature, glow]);
   const Feature = DEMOS[feature];
   return (
     <>
