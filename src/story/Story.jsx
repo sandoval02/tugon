@@ -122,7 +122,9 @@ export default function Story({ theme, reduced }) {
     const at = (t, target, vars, d) => tl.to(target, { duration: d, ...vars }, t);
 
     // 1 · leave the hero: text dissolves upward, camera climbs into the clouds
-    at(0.04, ".hero-layer", { autoAlpha: 0, y: -70, filter: "blur(14px)", ease: "power2.in" }, 0.07);
+    // phones: the hero copy just fades where it is (no drift, no blur); wider screens lift and blur it away
+    const phone = () => innerWidth < 761;
+    at(0.04, ".hero-layer", { autoAlpha: 0, y: () => (phone() ? 0 : -70), filter: () => (phone() ? "blur(0px)" : "blur(14px)"), ease: "power2.in" }, 0.07);
     at(0.05, S, { cam: 1, ease: "power2.in" }, 0.08);
     at(0.05, S, { rot: 0, sway: 0, ease: "power2.inOut" }, 0.08);
     at(0.07, S, { clouds: 1 }, 0.05);
