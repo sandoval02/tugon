@@ -267,7 +267,7 @@ export default function Story({ theme, reduced }) {
                   <dl>
                     <div><dt>Area</dt><dd>{sel.meta.area_km2.toFixed(2)} km²</dd></div>
                     <div><dt>Elevation</dt><dd>{sel.meta.elev_m[0]}–{sel.meta.elev_m[1].toLocaleString()} m</dd></div>
-                    <div><dt>To municipal hall</dt><dd>{km < 0.1 ? "< 0.1" : km.toFixed(1)} km</dd></div>
+                    <div><dt>To <span className="hide-sm">municipal </span>hall</dt><dd>{km < 0.1 ? "< 0.1" : km.toFixed(1)} km</dd></div>
                   </dl>
                   {!touring && <button className="btn btn-ghost btn-sm" onClick={() => setSelected(null)}>Put it back</button>}
                 </>
