@@ -119,6 +119,11 @@ function useRelease(href) {
   const [state, setState] = useState({ status: "checking" });
   useEffect(() => {
     let alive = true;
+    // Absolute links (GitHub Releases) can't be probed cross-origin; trust them.
+    if (/^https?:\/\//.test(href)) {
+      setState({ status: "ok", size: null });
+      return;
+    }
     fetch(href, { method: "HEAD" })
       .then((r) => {
         const ct = r.headers.get("content-type") || "";
