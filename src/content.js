@@ -2,7 +2,7 @@
 
 /* Edit when you publish a new build. */
 export const RELEASE = {
-  version: "1.0.2",
+  version: "1.0.3",
   // APK is >100 MB, too big for git: it is published as a GitHub Release asset.
   apk: "https://github.com/sandoval02/tugon/releases/latest/download/tugon.apk",
   ipa: "downloads/tugon.ipa",
